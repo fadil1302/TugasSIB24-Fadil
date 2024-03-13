@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendataan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Form Pendataan Mahasiswa</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="form.html">Pendataan</a>
+        <a href="jsdasar.html">Contoh Js Dasar</a>
+    </nav>
+    <div class="form1">
+        <form action="index.html" method="post">
+            <fieldset>
+            <legend>Form Pendataan</legend>
+            <div>
+                <label for="nama">Nama </label><br>
+                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
+            </div>
+            <div>
+                <label for="email">Email </label><br>
+                <input type="email" name="email" id="email" placeholder="Email aktif" required>
+            </div>
+            <div>
+                <label for="no">No HP </label><br>
+                <input type="tel" name="no" id="no" placeholder="No HP aktif" required>
+            </div>
+            <div>
+                <label for="gender">Jenis Kelamin :</label>
+                <div>
+                    <input type="radio" id="pria" name="gender" required>
+                    <label for="pria">Laki - laki</label>
+                </div>
+                <div>
+                    <input type="radio" id="wanita" name="gender" required>
+                    <label for="wanita">Perempuan</label>
+                </div>
+            </div>
+            <div>
+                <label for="list">Prodi :</label>
+                <div>
+                    <select name="list" id="list">
+                        <option value="">Pilih</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="hobi">Hobi :</label>
+                <div>
+                    <input type="checkbox" name="hobi" id="hobi1">
+                    <label for="hobi1">Membaca</label><br>
+                    <input type="checkbox" name="hobi" id="hobi1">
+                    <label for="hobi1">Menulis</label><br>
+                    <input type="checkbox" name="hobi" id="hobi1">
+                    <label for="hobi1">Menyanyi</label><br>
+                    <input type="checkbox" name="hobi" id="hobi1">
+                    <label for="hobi1">Olahraga</label><br>
+                </div>
+            </div>
+            <div>
+                <label for="alamat">Alamat :</label>
+                <div>
+                    <textarea name="alamat" id="alamat" cols="20" rows="2" placeholder="Alamat lengkap" required></textarea>
+                </div>
+            </div>
+            <div>
+                <label for="foto">Foto Diri :</label>
+                <div>
+                    <input type="file" id="foto" name="foto">
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Daftar">
+                <input type="reset" value="reset">
+            </div>
+            </fieldset> 
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pendataan Mahasiswa. All rights reserved.</p>
+    </footer>
+</body>
+</body>
+</html>

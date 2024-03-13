@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Website Pendataan Mahasiswa</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="form.html">Pendataan</a>
+        <a href="jsdasar.html">Contoh Js Dasar</a>
+    </nav>
+    <main>
+        <h2>Selamat Datang di website Pendataan Mahasiswa</h2>
+        <p>silahkan klik <u>pendataan</u> untuk mengisi identitas mahasiswa kalian.</p>
+        <p>Untuk mengetahui dasar dasar  javascript kalian bisa klik <u> contoh js dasar</u>.</p>
+
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="./picture/image1.avif" alt="Image 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="./picture/image2.avif" alt="Image 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="./picture/image3.avif" alt="Image 3">
+            </div>
+            <button class="prev" onclick="prevSlide()">Previous</button>
+            <button class="next" onclick="nextSlide()">Next</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pendataan Mahasiswa. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
