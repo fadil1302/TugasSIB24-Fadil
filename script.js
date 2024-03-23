@@ -90,4 +90,5 @@ function showSlide(index) {
 
 setInterval(nextSlide, 3000);
 
-// caraousel
+
+// caraousell
