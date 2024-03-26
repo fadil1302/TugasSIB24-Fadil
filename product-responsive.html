@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Product API</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="form.html">Pendataan</a>
+        <a href="jsdasar.html">Contoh Js Dasar</a>
+        <a href="product-responsive.html">Product API</a>
+    </nav>
+    
+    <main class="container-p">
+        <section id="add">
+            <h1>Tambah Produk</h1>
+
+            <form id="product">
+                <div>
+                    <label for="nama">Nama barang</label><br>
+                    <input type="text" id="nama" name="nama">
+                </div>
+                <div>
+                    <label for="jumlah">jumlah barang</label><br>
+                    <input type="text" id="jumlah" name="jumlah">
+                </div>
+                <div>
+                    <label for="harga">harga</label><br>
+                    <input type="text" id="harga" name="harga">
+                </div>
+                <button type="submit">submit</button>
+            </form>
+        </section>
+
+        <section id="read">
+            <h1>Daftar Produk</h1>
+
+            <div>
+                <ul id="produk-l">
+                    
+                </ul>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pendataan Mahasiswa. All rights reserved.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+</body>
+</html>
