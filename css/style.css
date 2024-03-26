@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 700px;
+    box-sizing: border-box;
+}
+/* index */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    /* position: sticky;
+    top: 0%; */
+}
+nav {
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* index */
+
+/* form */
+.form1{
+    display:flex;
+    justify-content: center;
+}
+
+fieldset{
+    width: 100px;
+}
+
+input,
+label,
+textarea{
+    margin: 3px 0;
+}
+/* form */
+
+/* carousel */
+.carousel {
+    position: sticky;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-slide img {
+    width: 100%;
+}
+
+.carousel-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+/* carousel */
+
+ /* ============== */
+
+/* login */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 30%;
+    background-color: aqua;
+    padding: 10px 2px;
+}
+
+.container-l{
+    display: flex;
+    flex-direction: column;
+}
+
+#login{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+#btn{
+    width: 20%;
+    align-self: center;
+    margin-top: 5%;
+}
+
+/* login */
+
+/* =================== */
+
+/* pro res */
+
+.container-p{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+#add,
+#read{
+    border: 2px solid black;
+    padding: 10px 2px;
+    align-items: center;
+}
+
+/* pro res */
+
+/* ======== */
+
+/* media query */
+
+@media (max-width:400px) or (min-width:1400px) {
+    body{
+        background-color: aqua;
+    }
+    .container-p{
+        grid-template-columns: auto;
+    }
+}
+
+/* media query */
